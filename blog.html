@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<section class="post-list">
+    <div class="container">
+        <h2 class="post-list-heading">Articles</h2>
+        <section class="post-list-group">
+            <h3 class="post-list-title">2018</h3>
+            <ul>
+                {% for post in site.posts %}
+                <li>
+                    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+    </div>
+</section>
+
+{% include newsletter.html %}

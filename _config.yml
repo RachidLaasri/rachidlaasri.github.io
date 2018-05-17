@@ -1,0 +1,13 @@
+# Site settings
+title: Rachid Laasri
+email: rashidlaasri@gmail.com
+md5_email: ff02bbb058fb94c7d9113565cb35bac4
+description: > # this means to ignore newlines until "baseurl:"
+  Laravel/Vue.js developer, blogger and open source enthusiast.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://rachidlaasri.com" # the base hostname & protocol for your site
+twitter_username: RashidLaasri
+github_username: RachidLaasri
+
+# Build settings
+markdown: kramdown

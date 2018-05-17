@@ -1,0 +1,55 @@
+---
+layout: default
+---
+<header class="header">
+		<div class="container">
+				<h1 class="header-heading">{{ page.title }}</h1>
+				<time class="header-date">Published on {{ page.date | date: "%b %-d, %Y" }} by Rachid Laasri</time>
+				<ul class="header-social">
+					<li>
+						<a class="button is-twitter is-moving" href="https://twitter.com/{{ site.twitter_username }}" target="_blank">
+							<i class="fa fa-twitter"></i>
+							<span>@{{ site.twitter_username }}</span>
+						</a>
+					</li>
+					<li>
+						<a class="button is-github is-moving" href="https://github.com/{{ site.github_username }}" target="_blank">
+							<i class="fa fa-github"></i>
+							<span>{{ site.twitter_username }}</span>
+						</a>
+					</li>
+					<li>
+						<a class="button is-google is-moving" href="mailto:{{ site.email }}">
+							<i class="fa fa-google"></i>
+							<span>{{ site.email }}</span>
+						</a>
+					</li>
+				</ul>
+		</div>
+</header>
+<section class="post-single">
+	<div class="container">
+		{{ content }}
+		{% if page.comments_enabled == true %}
+	<div class="post-divider"></div>
+	<section class="post-comments">
+		<div id="disqus_thread"></div>
+		<script type="text/javascript">
+		    /* * * CONFIGURATION VARIABLES * * */
+		    var disqus_shortname = 'rachidlaasricom';
+		    
+		    /* * * DON'T EDIT BELOW THIS LINE * * */
+		    (function() {
+		        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		    })();
+		</script>
+		<noscript>
+			Please enable JavaScript to view the 
+			<a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+		</noscript>
+	</section>
+	{% endif %}
+	</div>
+</section>
