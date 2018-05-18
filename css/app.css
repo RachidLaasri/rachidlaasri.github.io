@@ -2865,7 +2865,7 @@ main.main {
 }
 .anchor-underline,
 .post-single a {
-  box-shadow: inset 0 -5px 0 rgba(52,152,219,0.44);
+  box-shadow: inset 0 -4px 0 rgba(52,152,219,0.44);
   color: inherit;
   transition: 0.2s box-shadow, 0.2s color;
 }
