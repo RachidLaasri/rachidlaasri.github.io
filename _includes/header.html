@@ -11,10 +11,10 @@
                     <a href="/">Home</a>
                 </li>
                 <li {% if page.url == '/blog.html' %}class="current"{% endif %}>
-                    <a href="./blog.html">Blog</a>
+                    <a href="{{ 'blog.html' | absolute_url }}">Blog</a>
                 </li>
                 <li {% if page.url == '/about.html' %}class="current"{% endif %}>
-                    <a href="./about.html">About</a>
+                    <a href="{{ 'about.html' | absolute_url }}">About</a>
                 </li>
             </ul>
         </div>
